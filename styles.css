@@ -1,0 +1,126 @@
+/* fonts 
+font-family: 'Fredericka the Great', cursive;        display font with strokes?
+font-family: 'Lato', sans-serif;                     main text
+font-family: 'Sail', cursive;                        decorative*/
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  width: 100%;
+  background-color: #bdca97;
+}
+
+/* header-section*/
+
+header {
+  /* display: flex;
+  justify-content: space-between; */
+  /* flex-wrap: wrap;     it seems it does not do anything? :-)*/
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+#brand-name {
+  justify-items: start;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* background-image: url("./images/background_foliage3.jpg");
+  background-size: cover; */
+  background-color: #8a9a5b;
+}
+
+.surname {
+  font-size: 1.75rem;
+  letter-spacing: 0.15rem;
+  padding-top: 2rem;
+  margin: 0;
+}
+
+.developer {
+  padding-bottom: 1rem;
+}
+
+.surname,
+.developer {
+  color: white;
+  margin: 0;
+}
+
+nav {
+  margin-right: 5em;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  padding: 0.5rem 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #ffc300;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* about-section*/
+
+.about-section {
+  display: flex;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 2fr)); */
+  /* grid-gap: 1rem; */
+  padding: 1rem 0;
+  background-color: #535e34; /* #616d3f;*/
+}
+
+h1 {
+  font-family: "Carattere", cursive;
+  font-size: 2.5rem;
+}
+
+.about-img img {
+  width: 70%;
+  /* filter: brightness(50%); */
+  margin-left: 2rem;
+  border-radius: 5px;
+}
+
+.about-img {
+  align-self: center;
+  justify-self: end;
+}
+
+.about-text,
+.about-title {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin: auto;
+  color: white;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  /*for media queries to work, always remember to add viewport meta tag to <head> :-) */
+  .about-section {
+    flex-wrap: wrap;
+  }
+}
+
+/* projects-section*/
+
+/* footer-section*/
+footer {
+  border-top: 1px solid gray;
+  font-size: 0.75rem;
+  color: gray;
+  padding-left: 2rem;
+}
